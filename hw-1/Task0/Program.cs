@@ -8,15 +8,20 @@ Console.WriteLine("Введите первое число");
 string input_string1 = Console.ReadLine();
 Console.WriteLine("Введите второе число");
 string input_string2 = Console.ReadLine();
+
 int number1 = Convert.ToInt32(input_string1);
 int number2 = Convert.ToInt32(input_string2);
-int max = number1;
+
+
 if (number2 > number1)
 {
-    max = number2;
+    Console.WriteLine($"Max = {number2}");
+}
+else if (number2 == number1)
+{
+    Console.WriteLine($"числа равны");
 }
 else
 {
-    max = number1;
+    Console.WriteLine($"Max = {number1}");
 }
-Console.WriteLine($"Max = {max}");
