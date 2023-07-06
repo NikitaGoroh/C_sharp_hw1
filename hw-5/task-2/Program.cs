@@ -9,7 +9,7 @@ double[] GenerateArray(int len, int min, int max)
     Random rnd = new Random();
     for (int i = 0; i < answer.Length; i++)
     {
-        answer[i] = rnd.Next(min, max + 1) + rnd.NextDouble;
+        answer[i] = rnd.Next(min, max + 1) + rnd.NextDouble();
 
     }
     return answer;
